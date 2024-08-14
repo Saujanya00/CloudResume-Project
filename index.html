@@ -65,5 +65,30 @@
     <li>Work within a global support team covering 24x7x365 cloud operations - effectively managing handoff from shift-to-shift for cloud support issues.</li>
     <li>Contribute to a customer focused environment that encourages information sharing, team-based resolution activity, cross training and an absolute focus on resolving customer incidents as quickly and effectively as possible. </li>
 </ul>
+
+<button onclick="myFunction()">DONT MISS ME</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let text;
+  let person = prompt("Please enter your name:", "");
+  if (person == null || person == "") {
+    text = "User cancelled the prompt.";
+  } 
+  else {
+    alert("Hello " + person + "!!! There is more to see in my website, still working on it. This is a project inspired by a a challenge hosted by Forrest Brazeal. I have many ideas to put in work and want my website to be unique. So, please do check my website later. To know more about the challenge, click OK after reading this.", "");
+      
+};
+  if (window.confirm('Ok to Confirm, Cancel to Stay here'))
+   {
+   window.open('https://cloudresumechallenge.dev/docs/the-challenge/aws/', '_blank');
+   };
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+
 </body>
 </html>
