@@ -1,94 +1,32 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Know About ME!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        h1, h4, span {
-            text-align: center;
-        }
-        h3 {
-            font-weight: bold;
-        }
-        hr {
-            border-style: solid;
-            border-bottom: thick line #000000;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    
-    
+        body {
+            background: linear-gradient(to right, #282727, #6c78d0) !important;
         }
     </style>
 </head>
 <body>
-    <b><h1>SAUJANYA BANDLA</h1></b>
-<h4>Ann Arbor, MI | bsaujanya00@gmail.com | +1 734-280-3050 | Citizenship: USA | <a href="https://www.linkedin.com/in/saujanya-bandla/
-    " target="_blank" >Linkedin</a> </h4>
+    <div id="prompt" class="prompt">
+        <h1>Spoiler alert: If you ask about my website's name, epic music might just start playing. 🎶 Do you dare to know?</h1>
+        <button id="playButton">DARE!👻</button>
+        <button id="continueButton">Mystery Unsolved😞</button>
+    </div>
 
-<h3>Professional Summary</h3>
-<hr>
-<p>Recent Computer Science graduate with 2 years experience as a Cloud Support Analyst with extensive knowledge of cloud computing concepts. Well-acquainted with networking and cloud technologies such as Docker and Kubernetes and a passion for automation.
-</p>
-<p> Key Skills: AWS Cloud, VMware, Containerization, Problem Solving and Troubleshooting, Continuous Learning</p>
-
-<u><h3>Technical Skills</h3></u>
-<ul>
-    <li><b><u>DevOps Tools:</u></b> Docker, Kubernetes, Ansible, Terraform, Jenkins, Nagios, Grafana</li> 
-     <li><b><u>Programming Languages:</u></b> Python, Java, C, C++, C#</li>   
-        <li><b><u>Operating System:</u></b> Linux, Windows</li>
-       <li><b><u>Version Control Systems:</u></b> Git, Github</li> 
-        <li><b><u>Cloud Platforms:</u></b> AWS, Azure, GKE</li> 
-        <li><b><u>Database Technologies:</u></b> SQL, MySQL, MongoDB</li> 
-        <li><b><u>Front-End Technologies:</u></b> HTML, CSS, JavaScript </li>
-        <li><b><u>Certifications:</u></b> AWS Certified Cloud Practitioner</li> 
-</ul><br>
-
-<h3>Education</h3><hr>
-<b>Jawaharlal Nehru Technological University <span style="float: right;">Aug 2021</span> </b>
- 
-<b><p>Bachelor of Technology in Computer Science & Engineering,  India</b></p>
-<p>Courses: Cloud Computing, Data Communications and Computer Networks, Software Engineering, Operating Systems, Python Programming, Computer Programming in C, Object Oriented Programming through Java, Data Structures</p>
-<br>
-
-<h3>Work Experience</h3><hr>
-<b><p>Cloud Support Analyst  <span style="float: right">Sep 2021 - May 2023</span></p></b>
-<b><p>Halliburton</p></b>
-<ul>
-    <li>Provide first and second line of cloud and applications support to various customers such as Aker BP, Petronas, Repsol, ANPG using Salesforce Service Cloud.</li>
-    <li>Work with iEnergy Hybrid Cloud an internally developed premier petrochemical cloud environment software to provide cloud support to customers.</li>
-    <li>Resolve tickets received in a timely and professional manner via effective investigation, triage and follow-through with all priority customer incidents.</li> 
-    <li>Assist with user onboarding using Okta and Active Directory for cloud access to focus on their core business hosted in the iEnergy cloud.</li>
-    <li>Work with SRE and R&D teams to expedite incident resolution and ensure seamless delivery of support service to customers.</li>
-    <li>Configuring applications and managing users in VMware Identity Manager.</li>
-    <li>Create knowledge-based articles and generate in-depth Root Cause Analysis reports on reported issues, ensuring accurate and timely resolutions for customers.</li>
-    <li>Monitor and escalate Opsgenie and New Relic alerts to respective teams.</li>
-    <li>Offer complete and timely technical explanations to customers throughout the incident resolution process and ensure that customers’ staff fully understand issue, its resolutions and means for prevention.</li>
-    <li>Work within a global support team covering 24x7x365 cloud operations - effectively managing handoff from shift-to-shift for cloud support issues.</li>
-    <li>Contribute to a customer focused environment that encourages information sharing, team-based resolution activity, cross training and an absolute focus on resolving customer incidents as quickly and effectively as possible. </li>
-</ul>
-
-<button onclick="myFunction()">DONT MISS ME</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  let text;
-  let person = prompt("Please enter your name:", "");
-  if (person == null || person == "") {
-    text = "User cancelled the prompt.";
-  } 
-  else {
-    alert("Hello " + person + "!!! There is more to see in my website, still working on it. This is a project inspired by a a challenge hosted by Forrest Brazeal. I have many ideas to put in work and want my website to be unique. So, please do check my website later. To know more about the challenge, click OK after reading this.", "");
-      
-};
-  if (window.confirm('Ok to Confirm, Cancel to Stay here'))
-   {
-   window.open('https://cloudresumechallenge.dev/docs/the-challenge/aws/', '_blank');
-   };
-  document.getElementById("demo").innerHTML = text;
-}
-</script>
-
-
+    <div id="content" class="content hidden">
+        <div class="galaxy-background"></div>
+       <!-- <iframe id="video" src="https://www.youtube.com/embed/2QSukL7dl5o?si=ybdn1SmDKJ9UsqYo&amp;controls=0&amp;start=2&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      --> 
+         <div id="card" class="card">
+            <button id="closeButton" class="close-btn">&times;</button>
+            <p>I’ve always got music playing while I work—it’s my secret fuel for staying motivated. So, when I was hunting for the perfect domain name for my website, scrolling through Google like a detective on a case, naturally, my playlist was on. My playlist was pumping when suddenly, Takeaway by The Chainsmokers song kicked in, and I was totally vibing. Suddenly, I had a lightbulb moment! The line “your heart for takeaway” stuck with me, and then it hit me—my portfolio is basically my resume for takeaway! Why not call it resume4takeaway? And just like that—boom! Inspiration struck. That’s the story behind my quirky domain name, straight from my playlist to the web!</p>
+        </div>
+    </div>
+    <audio id="background-music" src="music/takeaway.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
 </body>
 </html>

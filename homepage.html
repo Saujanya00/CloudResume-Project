@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bkg">
+        
+     <div class="content">
+         <h1>My website is <span>coming soon</span></h1>
+         <form action="https://api.web3forms.com/submit" method="post">
+             <input type="hidden" name="access_key" value="033bc0e5-aa6e-4ad1-90f5-b7e9ea630eae">
+
+             <input name="email" type ="email" placeholder="Email Address" required>
+             <button type="submit" class="btn"> Subscribe</button>
+         </form>
+         <button onclick="myFunction()" class="btn">Know about my website</button>
+     </div>
+     <div class="links">
+        <a href="https://www.linkedin.com/in/saujanya-bandla/" target="_blank"><img src="images/linkedin.png"</a>
+
+     </div>
+    </div>
+    <script>
+        function myFunction() {
+          let text;
+          let person = prompt("Please enter your name:", "");
+          if (person == null || person == "") {
+            text = "User cancelled the prompt.";
+          } 
+          else {
+            alert("Hello " + person + "!!! There is more to see in my website, still working on it. This is a project inspired by a a challenge hosted by Forrest Brazeal. I have many ideas to put in work and want my website to be unique. So, please do check my website later. To know more about the challenge, click OK after reading this.", "");
+              
+        };
+          if (window.confirm('Ok to Confirm, Cancel to Stay here'))
+           {
+           window.open('https://cloudresumechallenge.dev/docs/the-challenge/aws/', '_blank');
+           };
+          document.getElementById("demo").innerHTML = text;
+        }
+        const counter = document.querySelector(".counter-number");
+        async function updateCounter() {
+            let response = await fetch("https://nbmsusms6e52llowedq2jasgxu0acfiw.lambda-url.us-west-2.on.aws/");
+            let data = await response.json();
+            counter.innerHTML = 'Views: ${data}';
+        }
+        updateCounter();
+        document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        });
+        </script>
+</body>
+</html>
